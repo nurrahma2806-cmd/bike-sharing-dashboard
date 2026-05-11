@@ -12,8 +12,8 @@ st.markdown("Visualisasi dari data penyewaan sepeda tahun 2011-2012")
 # --- Load Data dari File Lokal ---
 @st.cache_data
 def load_data():
-    day_path = r"C:\Users\ASUS\Downloads\Submission\Dashboard\day.csv"
-    hour_path = r"C:\Users\ASUS\Downloads\Submission\Dashboard\hour.csv"
+    day_url = "https://drive.google.com/uc?id=1xnbSgz7CPQlMTZferCj1zaFuIdEBBhcw"
+    hour_url = "https://drive.google.com/uc?id=1cvzL-tEa33v_PNuBR84AM1fqoiMG2pxM"
     
     df_day = pd.read_csv(day_path)
     df_hour = pd.read_csv(hour_path)
