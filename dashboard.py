@@ -15,8 +15,8 @@ def load_data():
     day_url = "https://drive.google.com/uc?id=1xnbSgz7CPQlMTZferCj1zaFuIdEBBhcw"
     hour_url = "https://drive.google.com/uc?id=1cvzL-tEa33v_PNuBR84AM1fqoiMG2pxM"
     
-    df_day = pd.read_csv(day_path)
-    df_hour = pd.read_csv(hour_path)
+    df_day = pd.read_csv(day_url)
+    df_hour = pd.read_csv(hour_url)
     
     # Konversi tipe data
     df_day['dteday'] = pd.to_datetime(df_day['dteday'])
